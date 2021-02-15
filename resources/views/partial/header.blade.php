@@ -15,8 +15,11 @@
           <a class="nav-link" href={{route('page2')}}>Page2</a>
         </li>
         <li class="nav-item {{ Request::is('page3') ? 'active' : '' }}">
-            <a class="nav-link" href={{route('page3')}}>Page3</a>
-          </li>
+          <a class="nav-link" href={{route('page3')}}>Page3</a>
+        </li>
+        <li class="nav-item {{ Request::is('page4') ? 'active' : '' }}">
+          <a class="nav-link" href={{route('page4')}}>Page4</a>
+        </li>
       </ul>
     </div>
   </nav>
