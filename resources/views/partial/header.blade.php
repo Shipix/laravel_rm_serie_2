@@ -5,16 +5,16 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item {{ Request::is('/') ? 'active' : '' }}">
           <a class="nav-link" href={{route('home')}}>Home <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ Request::is('page1') ? 'active' : '' }}">
           <a class="nav-link" href={{route('page1')}}>Page1</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ Request::is('page2') ? 'active' : '' }}">
           <a class="nav-link" href={{route('page2')}}>Page2</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item {{ Request::is('page3') ? 'active' : '' }}">
             <a class="nav-link" href={{route('page3')}}>Page3</a>
           </li>
       </ul>
