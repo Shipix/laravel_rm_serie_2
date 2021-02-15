@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
 </head>
 <body>
+    @include('partial.header')
     @yield('content')
     <script src="{{asset('js/app.js')}}"></script>
+    @include('partial.footer')
 </body>
 </html>
